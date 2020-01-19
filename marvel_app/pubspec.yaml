@@ -1,0 +1,52 @@
+name: marvel_app
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.4
+  cached_network_image: ^2.0.0
+  rxdart: ^0.18.0
+  http: ^0.12.0+1
+  intl: ^0.15.8
+  inject:
+    git:
+      url: https://github.com/google/inject.dart.git
+      path: package/inject
+
+dependency_overrides:
+  analyzer: ^0.36.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^1.0.0
+
+  inject_generator:
+    git:
+      url: https://github.com/google/inject.dart.git
+      path: package/inject_generator
+  mockito: ^4.1.0
+
+flutter_icons:
+  image_path_android: "assets/images/marvel-icon.png"
+  image_path_ios: "assets/images/marvel-icon.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/fonts/
+  - assets/images/
+  fonts:
+    - family: Marvel
+      fonts:
+        - asset: assets/fonts/Marvel-Regular.ttf
+        - asset: assets/fonts/Marvel-Bold.ttf

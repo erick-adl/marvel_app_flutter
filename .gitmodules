@@ -1,0 +1,3 @@
+[submodule "marvel_app/vendor/inject.dart"]
+	path = marvel_app/vendor/inject.dart
+	url = https://github.com/google/inject.dart
