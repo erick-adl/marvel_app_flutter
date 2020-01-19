@@ -2,7 +2,7 @@
 
 A Flutter application looks alike Mavel app and using Inject and Bloc.
 
-<img height="480px" src="https://github.com/erick-adl/flutter-marvel/blob/development/screenshot/sc.jpg">
+<img height="480px" src="https://github.com/erick-adl/marvel_app_flutter/blob/master/screenshot/sc.jpg">
 
 ## First of all
 ### libraries and approaches:
