@@ -20,43 +20,14 @@ class _MainAppBarState extends State<MainAppBar>
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: Color(0xFFED1D24),
       automaticallyImplyLeading: false,
       centerTitle: false,
-      leading: null,
-      actions:  <Widget>[        
-        Image.asset(
+      title:  Image.asset(
         'assets/images/splash.png',
-        height: 40,
+        height: 100,
+        width: 100,
       ),
-        new Flexible(
-          child: Container(
-            padding: EdgeInsets.all(5),
-            child: TextField(
-              // onChanged: (a) async {
-              // },
-              autofocus: false,
-              decoration: InputDecoration(
-                suffixIcon: new Icon(Icons.search),
-                hintText: "Find by name..",
-                border: OutlineInputBorder(
-                    gapPadding: 0.0,
-                    borderSide: new BorderSide(color: Colors.black),
-                    borderRadius: BorderRadius.all(Radius.circular(15.0))),
-                hintStyle: TextStyle(color: Colors.black),
-                focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                    borderSide: BorderSide(color: Colors.blue)),
-                contentPadding: EdgeInsets.only(bottom: 20.0, left: 10.0),
-              ),
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 16.0,
-              ),
-            ),
-          ),
-        ),
-      ],
-      elevation: 0,
     );
   }
 }

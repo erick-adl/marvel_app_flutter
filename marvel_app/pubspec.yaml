@@ -14,6 +14,7 @@ dependencies:
   rxdart: ^0.18.0
   http: ^0.12.0+1
   intl: ^0.15.8
+
   inject:
     git:
       url: https://github.com/google/inject.dart.git

@@ -8,9 +8,7 @@ import 'package:convert/convert.dart';
 import 'package:marvel_app/src/models/characters.dart';
 import 'package:marvel_app/src/models/state.dart';
 
-
 class CharacterApiProvider {
-
   final Client client;
   final _apiKeyPublic = MarvelKey.publicKey;
   final _apiKeyPrivate = MarvelKey.privateKey;
@@ -19,16 +17,17 @@ class CharacterApiProvider {
   int _offset = 0;
   int _limit = 20;
 
-
   @provide
   CharacterApiProvider(this.client);
 
   Future<State> fetchCharacters() async {
     Response response;
+
     if (_apiKeyPublic.length > 0) {
       var ts = DateTime.now();
       var hash = generateMd5("$ts" + _apiKeyPrivate + _apiKeyPublic);
-      var request = "$_baseUrl$_charactersUrl?offset=$_offset&limit=$_limit&apikey=$_apiKeyPublic&ts=$ts&hash=$hash";
+      var request =
+          "$_baseUrl$_charactersUrl?offset=$_offset&limit=$_limit&apikey=$_apiKeyPublic&ts=$ts&hash=$hash";
       response = await client.get(request);
     } else {
       throw State<String>.error('Please add your API key');
