@@ -32,12 +32,11 @@ class CharacterApiProvider {
     } else {
       throw State<String>.error('Please add your API key');
     }
-    if (response.statusCode == 200) {
-      _offset += 20;
-      return State<Characters>.success(charactersFromJson(response.body));
-    } else {
-      throw State<String>.error(response.statusCode.toString());
-    }
+    if (response == null) throw State<String>.error("Client get error");
+    if (response.statusCode != 200)
+      throw State<String>.error(response?.statusCode?.toString());
+
+    return State<Characters>.success(charactersFromJson(response.body));
   }
 
   generateMd5(String data) {
