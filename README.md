@@ -56,8 +56,11 @@ dev_dependencies:
 7. Voila, now you can start the application, first navigate inside screeshot folder:
     ```
     cd marvel_app
+    flutter run --release
+    or 
+    To run the application you can press F5.
+
     ```
-   To run the application you can press F5.
 
 8. If you want to run this app on iOS, navigate to 
     ```
