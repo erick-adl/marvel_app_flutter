@@ -47,7 +47,7 @@ dev_dependencies:
 3. Open the project in your favorite IDE, in this case I'm using [VSCode](https://code.visualstudio.com/), install Dart plugin, then 
     cmd + shift + p, type Pub: Get Packages.
 4. cmd + shift + p, type Flutter: Run Flutter Doctor, this command will help you to check if your flutter application can run on both android and ios platform.
-5. Navigate to marvel_app/lib/marvel_key.dart and change the key "<YOUR_MARVEL_API_KEY>" to your own api key. To get your api key please register first in here [MARVEL API Docs](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0)
+5. Navigate to marvel_app/lib/marvel_key.dart and change the publicKey and privateKey to your own api key. To get your api key please register first in here [MARVEL API Docs](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0)
 6. Run: 
     ```
     flutter packages pub run flutter_launcher_icons:main
